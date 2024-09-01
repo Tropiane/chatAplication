@@ -36,10 +36,10 @@ socket.on("messages", (data) => {
     const li = document.createElement("li");
     let chatMessages = ``;
     data.forEach(message => {
-        chatMessages +=`${message.user} dice: ${message.message} <br/>`
+        chatMessages =`${message.user} dice: ${message.message} <br/>`
     });
-
     li.innerHTML = chatMessages;
 
     chatlog.appendChild(li);
+
 })
